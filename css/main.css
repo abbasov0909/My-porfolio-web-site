@@ -7,7 +7,7 @@
 /*COLORS*/
 
 :root{
-    --colorDefault: #ffff00;
+    --colorDefault: #0000ff;
     --whiteColor: #ffffff;
 }
 
@@ -125,6 +125,7 @@ html{
 }
 
 .navbar-brand{
+    font-weight: bold;
     font-size: 1.7rem;
     color: var(--colorDefault)!important;
     padding-left: 6rem;
@@ -232,7 +233,7 @@ li:hover::after{
 
 .card > .card-header > i{
     font-size: 3rem;
-    background-color: #FFCC36;
+    background-color: var(--colorDefault);
     padding: 1.5rem;
     border-radius: 50%;
     color: #FEFFFE;
@@ -275,7 +276,7 @@ li:hover::after{
     left: 0;
     width: 350px;
     height: 197px;
-    background: #ffff00cf;
+    background-color: var(--colorDefault);
     opacity: 0;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
