@@ -149,7 +149,7 @@ li::after{
 }
 
 li:hover::after{
-    width: 100%;
+    width: 50%;
     background-color: var(--colorDefault);
 }
 
@@ -173,10 +173,11 @@ li:hover::after{
 }
 
 .col-md-6{
-    margin: 30% auto;
+    margin: 35% auto;
 }
 
 .titles > p{
+    cursor: default;
     font-size: 1.5rem;
     text-align: center;
     color: var(--whiteColor);
@@ -185,6 +186,7 @@ li:hover::after{
 }
 
 .titles > h3{
+    cursor: default;
     font-size: 3.5rem;
     color: var(--whiteColor);
     text-align: center;
@@ -271,12 +273,13 @@ li:hover::after{
 }
 
 .card-header > .overlay{
+    cursor: default;
     position: absolute;
     top: 0;
     left: 0;
     width: 350px;
-    height: 197px;
-    background-color: var(--colorDefault);
+    height: 169px;
+    background-color: #0000ff77;
     opacity: 0;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
@@ -290,14 +293,16 @@ li:hover::after{
 
 .overlay > h4{
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
+    color: var(--whiteColor);
 }
 
 .overlay > p{
     text-align: center;
     font-family: 'Lato', sans-serif;
+    color: var(--whiteColor);
 }
 
 /*ABOUT*/
@@ -318,6 +323,10 @@ li:hover::after{
 
 .about > .container > .row > .col-md-4:nth-child(2){
     margin: 9rem 0;
+}
+
+.info{
+    width: 490px;
 }
 
 .info > h4{
