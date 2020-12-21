@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #18191A;
+}
+
+.navbar{
+    /* position: sticky; */
+    position: relative;
+    background-color: #242526;
+    border-bottom: 1px solid #393A3B;
+    display: flex;
+    height: 56px;
+    align-items: center;
+}
+
+.navbar > .logo{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to top, #0062E0, #18AEFE);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navbar > .logo > p{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.navbar > .search-input{
+    position: absolute;
+    left: 4rem;
+    width: 215px;
+    height: 38px;
+    display: flex;
+    background-color: #3A3B3C;
+    border-radius: 88px;
+}
+
+.navbar > .search-input svg{
+    padding-left: 1rem;
+    width: 20px;
+}
+
+.navbar > .search-input input{
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.navbar > .menu{
+    position: absolute;
+    display: flex;
+    right: 330px;
+    width: 712px;
+    justify-content: space-around;
+    margin-left: 4rem;
+    align-items: center;
+}
+
+.navbar > .buttons{
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+
+.navbar > .buttons > button{
+    margin-top: 7px;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.navbar > .buttons > h3{
+    color: #D9DBE0;
+    margin-top: 11px;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.navbar > .buttons > .buttons2{
+    align-items: center;
+    display: flex;
+    width: 195px;
+    justify-content: space-around;
+}
+
+.navbar > .buttons > .buttons2 > svg{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #3A3B3C;
+}
+
+.navbar > .buttons > .buttons2 > i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #3A3B3C;
+    color: #E4E6EB;
+    font-size: 20px;
+}
+
+.navbar > .buttons > .buttons2 > i:nth-child(1){
+    margin-left: 1rem;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.left{
+    width: 302.5px;
+    /* border: 1px solid red; */
+    height: 601px;
+}
+
+.left > .menus{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.left > .menus:nth-child(1){
+    margin-top: 2rem;
+}
+
+.left > .menus1:nth-child(10){
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3E4042;
+}
+
+.left > .menus > button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.left > .menus > h3{
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #D9DBE0;
+}
+
+.left > .menus1{
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.left > .menus1 > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.left > .menus1 > h3{
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #D9DBE0;
+    font-size: 17px;
+}
+
+.left > .menus1 > i{
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #2F3031;
+    border-radius: 11px;
+}
+
+.left > .texts{
+    margin-top: 2rem;
+    color: #989B9F;
+    margin-left: 1rem;
+    font-size: 14px;
+}
+
+.center{
+    width: 743.98px;
+}
+
+.center > .stories{
+    display: flex;
+    margin: 0 auto;
+}
+
+.center > .stories > .storie{
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    width: 111.59px;
+    height: 198.38px;
+    background-color: #2F3031;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.center > .stories > .storie button{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.center > .stories > .storie h3{
+    position: absolute;
+    bottom: 1rem;
+    left: 10px;
+    color: #ffffff;
+}
+
+.center > .tweet{
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: relative;
+    width: 500px;
+    height: 123px;
+    background-color: #242526;
+    border-radius: 10px;
+}
+
+.center > .tweet > .input{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3A3B3C;
+}
+
+.center > .tweet > .input > button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.center > .tweet > .input > input{
+    margin-left: 5px;
+    font-size: 17px;
+    background-color: #3A3B3C;
+    color: #A6A9AE;
+    border-radius: 17px;
+    width: 400px;
+    padding-left: 10px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.center > .tweet > .buttons{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 2rem;
+}
+
+.center > .tweet > .buttons > h3{
+    color: #9A9DA1;
+    margin-left: 5px;
+}
+
+.center > .tweet > .buttons > i{
+    color: #45BD62;
+}
+
+.center > .tweet > .buttons2{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 12rem;
+}
+
+.center > .tweet > .buttons2 > h3{
+    color: #9A9DA1;
+    margin-left: 5px;
+}
+
+.center > .tweet > .buttons2 > i{
+    color: #1877F2;
+}
+
+.center > .tweet > .buttons3{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 21rem;
+}
+
+.center > .tweet > .buttons3 > h3{
+    color: #9A9DA1;
+    margin-left: 5px;
+}
+
+.center > .tweet > .buttons3 > i{
+    color: #F7B928;
+}
+
+.right{
+    width: 302.5px;
+    height: 600px;
+}
+
+.right .contacts{
+    width: 301px;
+    /* border: 1px solid red; */
+    height: 37px;
+    display: flex;
+}
+
+.right .contacts > h3{
+    margin-top: 10px;
+    /* margin-left: 1rem; */
+    color: #A3A6AC;
+    font-size: 15px;
+}
+
+.right .contacts > .buttons{
+    margin-left: 7rem;
+    width: 135px;
+    /* border: 1px solid red; */
+}
+
+.right .contacts > .buttons > i{
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 13px;
+    color: #A3A6AC;
+}
+
+.right > .users{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.right > .users > button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.right > .users > h3{
+    margin-top: 4px;
+    margin-left: 7px;
+    color: #E3E5EA;
+}

@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-color: #15202B;
+    display: flex;
+}
+
+.left{
+    /* position: relative; */
+    width: 325px;
+    height: 100vh;
+    border-right: 1px solid #38444D;
+}
+
+.logo svg{
+    width: 50px;
+    margin: 1rem 3rem;
+}
+
+.section{
+    display: flex;
+    margin-top: 9px;
+}
+
+.section svg{
+    width: 40px;
+    margin: 0 3rem;
+}
+
+.section h3{
+    font-size: 25px;
+    margin-left: -1.7rem;
+    margin-top: 9px;
+    color: #ffffff;
+}
+
+.button{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.button a{
+    padding: 1rem 6rem;
+    color: #ffffff;
+    background-color: #1DA1F2;
+    border-radius: 30px;
+}
+
+.profile{
+    position: absolute;
+    bottom: 5px;
+}
+
+/* .profile:hover{
+    background-color: #152C3F;
+} */
+
+.profile button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 4rem;
+}
+
+.profile_name{
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    margin-left: 7rem;
+    bottom: -2px;
+}
+
+/* .profile_name svg{
+    width: 10px;
+} */
+
+.profile_name h3{
+    color: #FFFFFF;
+}
+
+.profile_name p{
+    color: #738390;
+}
+
+.right{
+    /* margin-left: 38rem; */
+    width: 430px;
+    height: 100vh;
+    border-left: 1px solid #38444D;
+}
+
+.search{
+    border-radius: 20px;
+    margin: 1rem auto;
+    background-color: #253341;
+    width: 325px;
+}
+
+.search svg{
+    width: 20px;
+    margin: 0 15px;
+}
+
+.right > .search{
+    display: flex;
+}
+
+.right > .search input{
+    background-color: #253341;
+    border: none;
+    outline: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+    padding: 13px 0rem;
+    font-size: 15px; 
+}
+
+.right > .text{
+    border-radius: 17px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #192734;
+    width: 325px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.right > .text h3{
+    padding: 13px 20px;
+}
+
+.right > .text svg{
+    margin-left: 7rem;
+    width: 20px;
+}
+
+.tavsuyem{
+    border-radius: 17px;
+    margin:  2rem auto;
+    width: 325px;
+    height: 338px;
+    background-color: #192734;
+}
+
+.tavsuyem > .text{
+    border-bottom: 1px solid #38444D;
+}
+
+.tavsuyem > .text > h3{
+    color: #ffffff;
+    font-weight: bold;
+    padding: 17px 2rem;
+}
+
+.tavsuyem > .account{
+    border-bottom: 1px solid #38444D;
+    position: relative;
+    display: flex;
+}
+
+.tavsuyem > .account button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 1rem 1rem;
+}
+
+.tavsuyem > .account > .account-name{
+    width: 100px;
+    margin-top: 17px;
+    margin-left: -8px;
+}
+
+.tavsuyem > .account > .account-name h3{
+    color: #ffffff;
+}
+
+.tavsuyem > .account > .account-name p{
+    color: #738390;
+}
+
+.tavsuyem > .account > .button-follow{
+    margin-top: 21px;
+    margin-right: 1rem;
+    color: #1DA1F2;
+    position: absolute;
+    right: 0;
+}
+
+.tavsuyem > .account > .button-follow h5{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #1DA1F2;
+}
+
+.tavsuyem > .show-more{
+    margin: 20px 20px;
+}
+
+.tavsuyem > .show-more a{
+    color: #1DA1F2;
+}
+
+.right > h5{
+    color: #8899A6;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.center > .home-button{
+    width: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    border-bottom: 1px solid #38444D;
+    height: 42px;
+}
+
+.center > .home-button h3{
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.center > .home-button svg{
+    width: 30px;
+    position: absolute;
+    right: 26rem;
+}
+
+.center > .tweet-input{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.center > .tweet-input button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.center > .tweet-input input{
+    width: 529;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #8293A0;
+    caret-color: #8293A0;
+}
+
+.center > .tweet-input > .functions{
+    margin-top: 1rem;
+}
+
+.center > .tweet-input > .functions svg{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.center > .tweet-input > .functions svg:nth-child(1){
+    margin-left: 4rem;
+}
+
+.center > .tweet-input > .functions a{
+    margin-left: 19rem;
+    padding: 10px 25px;
+    border-radius: 22px;
+    background-color: #19608E;
+    color: #8A8F95;
+    font-weight: bold;
+}
+
+.center > .welcome{
+    margin-top: 2rem;
+    border-top: 1px solid #38444D;
+}
+
+.center > .welcome h3{
+    text-align: center;
+    color: #1DA1F2;
+    margin-top: 6rem;
+    font-size: 4rem;
+}

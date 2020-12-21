@@ -1,0 +1,161 @@
+*{
+    margin: auto 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+body{
+    background-color: #181818;
+}
+
+header{
+    background-color: #202020;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chap_taraf{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.chap_taraf > .menu{
+    margin: 5px 15px;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    /* position: relative; */
+}
+
+.search svg{
+    margin-left: -2px;
+    padding: 4px 33px;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.search:hover .search_text{
+    display: block;
+}
+.search > .search_button{
+    cursor: pointer;
+}
+
+.search input{
+    background-color: #121212;
+    margin: 2px;
+    width: 425px;
+    flex: 1;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid #303030;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.search input:focus{
+    border: 1px solid #1C62B9;
+    outline: none;
+}
+
+.ong_taraf{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-around;
+    width: 190px;
+}
+
+.ong_taraf button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.ong_taraf > .share{
+    cursor: pointer;
+}
+
+.ong_taraf > .menu{
+    cursor: pointer;
+}
+
+.ong_taraf > .notification{
+    cursor: pointer;
+}
+
+.ong_taraf > button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+body > .menu{
+    width: 280px;
+    height: 90.9vh;
+    background-color: #212121;
+    position: absolute;
+    /* border-bottom: 1px solid red; */
+}
+
+body > .menu > .main-menu{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #383838;
+}
+
+body > .menu > .main-menu > .logo{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    /* border: 1px solid red; */
+}
+
+body > .menu > .main-menu > .logo:hover{
+    transform: scale(100deg);
+}
+
+body > .menu > .main-menu > .logo > svg{
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+body > .menu > .main-menu > .logo > h3{
+    margin-top: 5px;
+    color: #EEEEEE;
+    font-size: 15px;
+}
+
+body > .menu > .follows{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+body > .menu > .follows > h3{
+    color: #A5A5A5;
+
+}
+
+body > .menu > .follows > .channel{
+    margin-top: 1rem;
+    display: flex;
+}
+
+body > .menu > .follows > .channel > button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+body > .menu > .follows > .channel > h3{
+    color: #A5A5A5;
+    font-size: 20px;
+    margin-left: 10px;
+}
