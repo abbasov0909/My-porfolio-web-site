@@ -103,15 +103,18 @@ body{
     padding: 10px;
     border-radius: 50%;
     background-color: #3A3B3C;
+    width: 25px;
+    height: 25px;
+    fill: #E4E6EB;
 }
 
-.navbar > .buttons > .buttons2 > i{
+/* .navbar > .buttons > .buttons2 > i{
     padding: 10px;
     border-radius: 50%;
     background-color: #3A3B3C;
     color: #E4E6EB;
     font-size: 20px;
-}
+} */
 
 .navbar > .buttons > .buttons2 > i:nth-child(1){
     margin-left: 1rem;
@@ -138,9 +141,13 @@ body{
     margin-top: 2rem;
 }
 
-.left > .menus1:nth-child(10){
-    padding-bottom: 15px;
-    border-bottom: 1px solid #3E4042;
+.left > .menus1 > svg{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    fill: #E4E6EB;
+    background-color: #3A3B3C;
+    border-radius: 50%;
 }
 
 .left > .menus > button{
@@ -283,8 +290,10 @@ body{
     margin-left: 5px;
 }
 
-.center > .tweet > .buttons > i{
-    color: #45BD62;
+.center > .tweet > .buttons > svg{
+    width: 20px;
+    height: 20px;
+    fill: #45BD62;
 }
 
 .center > .tweet > .buttons2{
@@ -299,8 +308,10 @@ body{
     margin-left: 5px;
 }
 
-.center > .tweet > .buttons2 > i{
-    color: #1877F2;
+.center > .tweet > .buttons2 > svg{
+    width: 20px;
+    height: 20px;
+    fill: #1877F2;
 }
 
 .center > .tweet > .buttons3{
@@ -315,8 +326,10 @@ body{
     margin-left: 5px;
 }
 
-.center > .tweet > .buttons3 > i{
-    color: #F7B928;
+.center > .tweet > .buttons3 > svg{
+    width: 20px;
+    height: 20px;
+    fill: #F7B928;
 }
 
 .right{
@@ -344,11 +357,13 @@ body{
     /* border: 1px solid red; */
 }
 
-.right .contacts > .buttons > i{
-    font-size: 15px;
-    margin-left: 15px;
+.right .contacts > .buttons > svg{
+    /* font-size: 15px; */
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
     margin-top: 13px;
-    color: #A3A6AC;
+    fill: #A3A6AC;
 }
 
 .right > .users{

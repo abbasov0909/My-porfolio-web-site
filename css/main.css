@@ -11,6 +11,16 @@
     --whiteColor: #ffffff;
 }
 
+*{
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid blue; */
+    font-family: sans-serif;
+}
+
 /*LOADER*/
 
 .loading{
@@ -113,7 +123,6 @@ html{
 
 .navbar{
     background-color:  transparent!important;
-    /* height: 70px; */
     transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
@@ -126,6 +135,7 @@ html{
 }
 
 .navbar-brand{
+    cursor: pointer;
     font-weight: bold;
     font-size: 1.7rem;
     color: var(--colorDefault)!important;
@@ -155,7 +165,7 @@ html{
 }
 
 .nav-link{
-    /* background: linear-gradient(to top, #ffff0079, transparent); */
+    cursor: pointer;
     color: #f3f3f3!important;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
@@ -164,6 +174,24 @@ html{
 }
 .nav-link:hover{
     color: var(--colorDefault)!important;
+}
+
+/* DARK MODE */
+
+html[data-theme='dark']{
+    --darkMode: #333333;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 75ms !important;
+    transition-delay: 0 !important;
+}
+
+body{
+    background-color: var(--darkMode);
 }
 
 input[type=checkbox]{
@@ -192,7 +220,7 @@ label:after {
 	left: 5px;
 	width: 20px;
 	height: 20px;
-	background: #fff;
+	background: var(--whiteColor);
 	border-radius: 90px;
 	transition: 0.3s;
 }
@@ -230,7 +258,6 @@ label:active:after {
 }
 
 .titles > p{
-    cursor: default;
     font-size: 1.5rem;
     text-align: center;
     color: var(--whiteColor);
@@ -239,7 +266,6 @@ label:active:after {
 }
 
 .titles > h3{
-    cursor: default;
     font-size: 3.5rem;
     color: var(--whiteColor);
     text-align: center;
@@ -253,13 +279,14 @@ label:active:after {
 }
 
 .button > a{
+    text-decoration: none;
+    cursor: pointer;
     background-color: var(--colorDefault);
     color: #000000;
     padding: 1.5rem 4rem;
     border-radius: 10px;
     font-size: 1.3rem;
     font-weight: 500;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -327,7 +354,6 @@ label:active:after {
 
 .card{
     background-color: var(--colorDefault);
-    cursor: default;
     transition: .3s ease;
 }
 
@@ -350,10 +376,10 @@ label:active:after {
 }
 
 .card-header a{
+    cursor: pointer;
     padding: 8px 19px;
     border: 2px solid white;
     border-radius: 5px;
-    text-decoration: none;
     color: white;
     margin-left: 15rem;
     margin-top: 10px;
@@ -362,7 +388,7 @@ label:active:after {
 }
 
 .card-header a:hover{
-    /* border-color: yellow; */
+    text-decoration: none;
     color: var(--colorDefault);
     background-color: var(--whiteColor);
 }
@@ -411,7 +437,6 @@ label:active:after {
 }
 
 .info > ul > li{
-    list-style: none;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -448,11 +473,11 @@ label:active:after {
 }
 
 .social-networks > a{
-    text-decoration: none;
     margin: 5px;
 }
 
 .social-networks > a >i{
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background-color: var(--colorDefault);
@@ -473,6 +498,886 @@ label:active:after {
 }
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 770px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar > button{
+        border: none;
+        outline: none;
+    }
+    
+    .navbar-brand{
+        padding: .5rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .change{
+        background-color: #000000f5!important;
+    }
+
+    .navbar-nav{
+        margin: 0 8rem;
+    }
+
+    .navbar-nav > li{
+        margin: 5px;
+        margin-left: -1rem;
+    }
+
+    /* HOME */
+
+    .home{
+        height: 100vh;
+    }
+
+    .row > .col-md-6{
+        margin: 40% auto;
+    }
+
+    .titles > p{
+        margin-top: 1rem;
+    }
+
+    .titles > h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .button{
+        margin: 3rem 9.8rem auto;
+    }
+
+    .button > a{
+        padding: 1rem 2rem;
+    }
+
+    /* SKILLS */
+
+    .my_skills > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 18px;
+    }
+
+    .section__progress img{
+        width: 40px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .text-center{
+        font-size: 0.9rem;
+    }
+
+    .card{
+        width: 370px;
+        margin: 7px auto;
+    }
+
+    .col-md-4 > .card > .card-header > img{
+        margin: 0;
+        width: 355px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 16rem;
+    }
+
+    .card-header > .overlay{
+        width: 248px;
+        height: 119px;
+        margin-left: 1.2rem;
+    }
+
+    .overlay > h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .overlay > p{
+        font-size: .9rem;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 3rem 0;
+    }
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .about > .container > .row > .col-md-4{
+        margin: 2rem 3rem;
+    }
+
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    .col-md-4 > .info{
+        padding: 0 2rem;
+    }
+
+    .info > h4{
+        font-size: 2rem;
+    }
+
+    .info > p{
+        margin: 1.3rem 0;
+        letter-spacing: normal;
+        font-size: 1.1rem;
+    }
+
+    .info > ul > li > .firstSpan{
+        font-size: 1.2rem;
+    }
+
+    .info > ul > li > .secondSpan{
+        font-size: 1.2rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar > button{
+        border: none;
+        outline: none;
+    }
+    
+    .navbar-brand{
+        padding: .5rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .change{
+        background-color: #000000f5!important;
+    }
+
+    .navbar-nav{
+        margin: 0 8rem;
+    }
+
+    .navbar-nav > li{
+        margin: 5px;
+        margin-left: -1rem;
+    }
+
+    /* HOME */
+
+    .home{
+        height: 100vh;
+    }
+
+    .row > .col-md-6{
+        margin: 40% auto;
+    }
+
+    .titles > p{
+        margin-top: 1rem;
+    }
+
+    .titles > h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .button{
+        margin: 3rem 9.8rem auto;
+    }
+
+    .button > a{
+        padding: 1rem 2rem;
+    }
+
+    /* SKILLS */
+
+    .my_skills > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 18px;
+    }
+
+    .section__progress img{
+        width: 40px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .text-center{
+        font-size: 0.9rem;
+    }
+
+    .card{
+        width: 370px;
+        margin: 7px auto;
+    }
+
+    .col-md-4 > .card > .card-header > img{
+        margin: 0;
+        width: 355px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 16rem;
+    }
+
+    .card-header > .overlay{
+        width: 248px;
+        height: 119px;
+        margin-left: 1.2rem;
+    }
+
+    .overlay > h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .overlay > p{
+        font-size: .9rem;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 3rem 0;
+    }
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .about > .container > .row > .col-md-4{
+        margin: 2rem 3rem;
+    }
+
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    .col-md-4 > .info{
+        padding: 0 2rem;
+    }
+
+    .info > h4{
+        font-size: 2rem;
+    }
+
+    .info > p{
+        margin: 1.3rem 0;
+        letter-spacing: normal;
+        font-size: 1.1rem;
+    }
+
+    .info > ul > li > .firstSpan{
+        font-size: 1.2rem;
+    }
+
+    .info > ul > li > .secondSpan{
+        font-size: 1.2rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar > button{
+        border: none;
+        outline: none;
+    }
+    
+    .navbar-brand{
+        padding: .5rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .change{
+        background-color: #000000f5!important;
+    }
+
+    .navbar-nav{
+        margin: 0 8rem;
+    }
+
+    .navbar-nav > li{
+        margin: 5px;
+        margin-left: -1rem;
+    }
+
+    /* HOME */
+
+    .home{
+        height: 100vh;
+    }
+
+    .row > .col-md-6{
+        margin: 40% auto;
+    }
+
+    .titles > p{
+        margin-top: 1rem;
+    }
+
+    .titles > h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .button{
+        margin: 3rem 7.8rem auto;
+    }
+
+    .button > a{
+        padding: 1rem 2rem;
+    }
+
+    /* SKILLS */
+
+    .my_skills > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 18px;
+    }
+
+    .section__progress img{
+        width: 40px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .text-center{
+        font-size: 0.9rem;
+    }
+
+    .card{
+        width: 370px;
+        margin: 7px auto;
+    }
+
+    .col-md-4 > .card > .card-header > img{
+        margin: 0;
+        width: 355px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 16rem;
+    }
+
+    .card-header > .overlay{
+        width: 248px;
+        height: 119px;
+        margin-left: 1.2rem;
+    }
+
+    .overlay > h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .overlay > p{
+        font-size: .9rem;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 3rem 0;
+    }
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .about > .container > .row > .col-md-4{
+        margin: 2rem 1rem;
+    }
+
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    .col-md-4 > .info{
+        padding: 0 2rem;
+    }
+
+    .info > h4{
+        font-size: 2rem;
+    }
+
+    .info > p{
+        margin: 1.3rem 0;
+        letter-spacing: normal;
+        font-size: 1.1rem;
+    }
+
+    .info > ul > li > .firstSpan{
+        font-size: 1.2rem;
+    }
+
+    .info > ul > li > .secondSpan{
+        font-size: 1.2rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar > button{
+        border: none;
+        outline: none;
+    }
+    
+    .navbar-brand{
+        padding: .5rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .change{
+        background-color: #000000f5!important;
+    }
+
+    .navbar-nav{
+        margin: 0 5rem;
+    }
+
+    .navbar-nav > li{
+        margin: 5px;
+        margin-left: -1rem;
+    }
+
+    /* HOME */
+
+    .home{
+        height: 100vh;
+    }
+
+    .row > .col-md-6{
+        margin: 40% auto;
+    }
+
+    .titles > p{
+        margin-top: 1rem;
+    }
+
+    .titles > h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .button{
+        margin: 3rem 6.8rem auto;
+    }
+
+    .button > a{
+        padding: 1rem 2rem;
+    }
+
+    /* SKILLS */
+
+    .my_skills > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 18px;
+    }
+
+    .section__progress img{
+        width: 40px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .text-center{
+        font-size: 0.9rem;
+    }
+
+    .card{
+        width: 325px;
+        margin: 7px auto;
+    }
+
+    .col-md-4 > .card > .card-header > img{
+        margin: 0;
+        width: 311px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 14rem;
+    }
+
+    .card-header > .overlay{
+        width: 248px;
+        height: 119px;
+        margin-left: 1.2rem;
+    }
+
+    .overlay > h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .overlay > p{
+        font-size: .9rem;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 3rem 0;
+    }
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .about > .container > .row > .col-md-4{
+        margin: 2rem 1rem;
+    }
+
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    .info > h4{
+        font-size: 2rem;
+    }
+
+    .info > p{
+        margin: 1.3rem 0;
+        letter-spacing: normal;
+        font-size: 1.1rem;
+    }
+
+    .info > ul > li > .firstSpan{
+        font-size: 1.2rem;
+    }
+
+    .info > ul > li > .secondSpan{
+        font-size: 1.2rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 370px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar > button{
+        border: none;
+        outline: none;
+    }
+    
+    .navbar-brand{
+        padding: .5rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .change{
+        background-color: #000000f5!important;
+    }
+
+    .navbar-nav{
+        margin: 0 5rem;
+    }
+
+    .navbar-nav > li{
+        margin: 5px;
+        margin-left: -1rem;
+    }
+
+    /* HOME */
+
+    .home{
+        height: 100vh;
+    }
+
+    .row > .col-md-6{
+        margin: 45% auto;
+    }
+
+    .titles > p{
+        margin-top: 1rem;
+    }
+
+    .titles > h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .button{
+        margin: 3rem 5.8rem auto;
+    }
+
+    .button > a{
+        padding: 1rem 2rem;
+    }
+
+    /* SKILLS */
+
+    .my_skills > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 18px;
+    }
+
+    .section__progress img{
+        width: 40px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .text-center{
+        font-size: 0.9rem;
+    }
+
+    .card{
+    width: 260px;
+    margin: 7px auto;
+    }
+
+    .col-md-4 > .card > .card-header > img{
+        margin: 0;
+        width: 248px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 10rem;
+    }
+
+    .card-header > .overlay{
+        width: 248px;
+        height: 119px;
+        margin-left: 1.2rem;
+    }
+
+    .overlay > h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .overlay > p{
+        font-size: .9rem;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 3rem 0;
+    }
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+
+    .about > .container > .row > .col-md-4{
+        margin: 2rem 1rem;
+    }
+
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    .info > h4{
+        font-size: 2rem;
+    }
+
+    .info > p{
+        margin: 1.3rem 0;
+        letter-spacing: normal;
+        font-size: .9rem;
+    }
+
+    .info > ul > li > .firstSpan{
+        font-size: 1rem;
+    }
+
+    .info > ul > li > .secondSpan{
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
+    }
+}
 
 @media (min-width: 315px) and (max-width: 330px){
     html, body{
@@ -533,6 +1438,18 @@ label:active:after {
         font-size: 1.8rem;
     }
 
+    .section__progress{
+        align-items: center;
+    }
+
+    .section__progress span{
+        font-size: 15px;
+    }
+
+    .section__progress img{
+        width: 30px;
+    }
+
     /* PORTFOLIO */
 
     .portfolio{
@@ -547,9 +1464,26 @@ label:active:after {
         font-size: 0.9rem;
     }
 
+    .card{
+    width: 260px;
+    margin: 7px auto;
+    }
+
     .col-md-4 > .card > .card-header > img{
-        width: 85%;
-        margin-left: 1.2rem;
+        margin: 0;
+        width: 248px;
+    }
+
+    .col-md-4 > .card > .card-header > h3{
+        font-size: 22px;
+    }
+
+    .col-md-4 > .card > .card-header > p{
+        font-size: 15px;
+    }
+
+    .col-md-4 > .card > .card-header > a{
+        margin-left: 10rem;
     }
 
     .card-header > .overlay{
@@ -577,11 +1511,11 @@ label:active:after {
     }
 
     .about > .container > .row > .col-md-4{
-        margin: 2rem 2.7rem;
+        margin: 2rem 1rem;
     }
 
     .about > .container > .row > .col-md-4:nth-child(2){
-        margin: 3rem 0;
+        margin: 1rem 0;
     }
 
     .info > h4{
@@ -589,6 +1523,7 @@ label:active:after {
     }
 
     .info > p{
+        margin: 1.3rem 0;
         letter-spacing: normal;
         font-size: .9rem;
     }
@@ -599,5 +1534,15 @@ label:active:after {
 
     .info > ul > li > .secondSpan{
         font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .row > .col-md-4:nth-child(2){
+        margin-bottom: 1rem;
     }
 }

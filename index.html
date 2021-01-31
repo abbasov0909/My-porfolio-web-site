@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,224 +11,249 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>AVDev | Portfolio</title>
 </head>
+
 <body>
 
-<!--LOADER-->
-<div class="loading">
-    <div class="main">
-        <div class="dot">
-            <div class="dot2">
+    <!--LOADER-->
+    <div class="loading">
+        <div class="main">
+            <div class="dot">
+                <div class="dot2">
 
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!--LOADER END-->
+    <!--LOADER END-->
 
-<!--NAVBAR-->
-<nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <!--NAVBAR-->
+    <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#">AVDev</a>
-      
+
         <!-- Toggler/collapsibe Button -->
-        <button onclick="navBack()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+        <button onclick="navBack()" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#my_skills">Skills</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact_me">Contact</a>
-              </li>
-            
-                <input type="checkbox" id="switch" name="theme"/>
-                <label for="switch">Toggle</label>
-            
-          </ul>
-        </div>
-</nav>
-<!--NAVBAR END-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#my_skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact_me">Contact</a>
+                </li>
 
-<!--HOME SECTION-->
-<section class="home">
-    <div class="overlay-home">
+                <input type="checkbox" id="switch" name="theme" />
+                <label for="switch">Toggle</label>
+
+            </ul>
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+
+    <!--HOME SECTION-->
+    <section class="home">
+        <div class="overlay-home">
+            <div class="container">
+                <div class="row">
+                    <dev class="col-md-6">
+                        <div class="titles">
+                            <p>Welcome to my website!</p>
+                            <h3>AbbasoV Portfolio</h3>
+                            <div class="button">
+                                <a href="#about">Here me!</a>
+                            </div>
+                        </div>
+                    </dev>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HOME SECTION END-->
+
+    <!--MY SKILLS SECTION-->
+    <section id="my_skills" class="my_skills">
         <div class="container">
-            <div class="row">
-                <dev class="col-md-6">
-                    <div class="titles">
-                        <p>Welcome to my website!</p>
-                        <h3>AbbasoV Portfolio</h3>
-                        <div class="button">
-                            <a href="#about">Here me!</a>
+            <h3 class="text-center">My skills</h3>
+            <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i>
+            </p>
+            <div class="skills__item">
+                <div class="section__progress col-md-5 col-sm-12 col-6">
+                    <span>HTML:</span> <img src="./images/my skills/HTML logo.png" alt="">
+                    <div class="progress">
+                        <div class="progress-bar info" style="background-color: #E44D26;">95%</div>
+                    </div>
+                </div>
+                <div class="section__progress col-md-5 col-sm-12 col-6">
+                    <span>CSS:</span> <img src="./images/my skills/CSS logo.png" alt="Loading...">
+                    <div class="progress">
+                        <div class="progress-bar info" style="background-color: #379AD6;">85%</div>
+                    </div>
+                </div>
+                <div class="section__progress col-md-5 col-sm-12 col-6">
+                    <span>Bootstrap:</span> <img src="./images/my skills/Bootstrap logo.png" alt="Loading...">
+                    <div class="progress">
+                        <div class="progress-bar info" style="background-color: #553A7D;">95%</div>
+                    </div>
+                </div>
+                <div class="section__progress col-md-5 col-sm-12 col-6">
+                    <span>JavaScript:</span> <img src="./images/my skills/JavaScript logo.png" alt="Loading...">
+                    <div class="progress">
+                        <div class="progress-bar info" style="background-color: #F7E018;">Learning :)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MY_SKILLS SECTION END-->
+
+    <!--PORTFOLIO SECTION-->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h3 class="text-center">Portfolio</h3>
+            <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i>
+            </p>
+            <div class="row mt-5">
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/Coca Cola Landing Page.png" alt="" class="card-img">
+                            <h3>Coca Cola Landing Page</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/Coca Cola Landing page/index.html"
+                                class="card-button">View</a>
                         </div>
                     </div>
-                </dev>
+                </div>
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/Twitter Practice.png" alt="" class="card-img">
+                            <h3>Twitter messenger</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/Twitter/index.html"
+                                class="card-button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/404 Error.png" alt="" class="card-img">
+                            <h3>Coca Cola Landing Page</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/Error 404 landing page/index.html"
+                                class="card-button">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/Facebook Practice.png" alt="" class="card-img">
+                            <h3>Coca Cola Landing Page</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/Facebook/index.html"
+                                class="card-button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/Coca Cola Landing Page2.png" alt="" class="card-img">
+                            <h3>Coca Cola Landing Page</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/coca cola landing page2/index.html"
+                                class="card-button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/portfolio/YouTube Practice.png" alt="" class="card-img">
+                            <h3>Coca Cola Landing Page</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex
+                                nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia
+                                ipsa, placeat magnam labore pariatur. Nesciunt.</p>
+                            <a target="_blank" href="./portfolio website/YouTube_Header/index.html"
+                                class="card-button">View</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--HOME SECTION END-->
+    </section>
+    <!--PORTFOLIO SECTION END-->
 
-<!--MY SKILLS SECTION-->
-<section id="my_skills" class="my_skills">
-    <div class="container">
-        <h3 class="text-center">My skills</h3>
-        <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i></p>
-        <div class="skills__item">
-            <div class="section__progress col-md-5 col-sm-12 col-6">
-                <span>HTML:</span> <img src="./images/my skills/HTML logo.png" alt="">
-                <div class="progress">
-                    <div class="progress-bar info" style="background-color: #E44D26;">95%</div>
+    <!--ABOUT SECTION-->
+    <section id="about" class="about">
+        <div class="container">
+            <h3 class="text-center">About</h3>
+            <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i>
+            </p>
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="1000">
+                    <img class="w-100" src="images/about/me.JPG" alt="Loading">
                 </div>
-            </div>
-            <div class="section__progress col-md-5 col-sm-12 col-6">
-                <span>CSS:</span> <img src="./images/my skills/CSS logo.png" alt="Loading...">
-                <div class="progress">
-                    <div class="progress-bar info" style="background-color: #379AD6;">85%</div>
-                </div>
-            </div>
-            <div class="section__progress col-md-5 col-sm-12 col-6">
-                <span>Bootstrap:</span> <img src="./images/my skills/Bootstrap logo.png" alt="Loading...">
-                <div class="progress">
-                    <div class="progress-bar info" style="background-color: #553A7D;">10%</div>
-                </div>
-            </div>
-            <div class="section__progress col-md-5 col-sm-12 col-6">
-                <span>JavaScript:</span> <img src="./images/my skills/JavaScript logo.png" alt="Loading...">
-                <div class="progress">
-                    <div class="progress-bar info" style="background-color: #F7E018;">Learning :)</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--MY_SKILLS SECTION END-->
-
-<!--PORTFOLIO SECTION-->
-<section id="portfolio" class="portfolio">
-    <div class="container">
-        <h3 class="text-center">Portfolio</h3>
-        <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i></p>
-        <div class="row mt-5">
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/Coca Cola Landing Page.png" alt="" class="card-img">
-                        <h3>Coca Cola Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/Coca Cola Landing page/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/Twitter Practice.png" alt="" class="card-img">
-                        <h3>Twitter messenger</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/Twitter/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/404 Error.png" alt="" class="card-img">
-                        <h3>Coca Cola Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/Error 404 landing page/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/Facebook Practice.png" alt="" class="card-img">
-                        <h3>Coca Cola Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/Facebook/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/Telegram Desktop Practice.png" alt="" class="card-img">
-                        <h3>Coca Cola Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/Telegram — копия/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-up" data-aos-duration="950">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./images/portfolio/YouTube Practice.png" alt="" class="card-img">
-                        <h3>Coca Cola Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem distinctio ex nostrum maiores laudantium corrupti odio sit, aliquam ullam modi laboriosam rem mollitia ipsa, placeat magnam labore pariatur. Nesciunt.</p>
-                        <a target="_blank" href="./portfolio website/YouTube_Header/index.html" class="card-button">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--PORTFOLIO SECTION END-->
-
-<!--ABOUT SECTION-->
-<section id="about" class="about">
-    <div class="container">
-        <h3 class="text-center">About</h3>
-        <p class="text-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, corrupti.</i></p>
-        <div class="row">
-            <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="1000">
-                <img class="w-100" src="images/about/me.JPG" alt="Loading">
-            </div>
-            <div class="col-md-4">
-                <div class="info">
-                    <h4>About me!</h4>
-                    <p>My last name is Abbasov. I am 15 years old. I live in Andijan. I am learning programming Now.  I want to be a strong fullstack programmer In the future. And my biggest dream is to build my own business in the USA.</p>
-                    <ul class="main">
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-user"></i>
-                                Name:
-                            </span>
-                            <span class="secondSpan">
-                                Abbasov Sayidulloh
-                            </span>
-                        </li>
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-calendar-alt"></i>
-                                Birthday:
-                            </span>
-                            <span class="secondSpan">
-                                9 September 2002
-                            </span>
-                        </li>
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Address:
-                            </span>
-                            <span class="secondSpan">
-                                Andijan, Uzbekistan
-                            </span>
-                        </li>
-                        <!-- <li>
+                <div class="col-md-4">
+                    <div class="info">
+                        <h4>About me!</h4>
+                        <p>My last name is Abbasov. I am 18 years old. I live in Andijan. I am learning programming Now.
+                            I want to be a strong fullstack programmer In the future. And my biggest dream is to build
+                            my own business in the USA.</p>
+                        <ul class="main">
+                            <li>
+                                <span class="firstSpan">
+                                    <i class="fas fa-user"></i>
+                                    Name:
+                                </span>
+                                <span class="secondSpan">
+                                    Abbasov Sayidulloh
+                                </span>
+                            </li>
+                            <li>
+                                <span class="firstSpan">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Birthday:
+                                </span>
+                                <span class="secondSpan">
+                                    9 September 2002
+                                </span>
+                            </li>
+                            <li>
+                                <span class="firstSpan">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Address:
+                                </span>
+                                <span class="secondSpan">
+                                    Andijan, Uzbekistan
+                                </span>
+                            </li>
+                            <!-- <li>
                             <span class="firstSpan">
                                 <i class="fas fa-envelope"></i>
                                 Email:
@@ -236,58 +262,62 @@
                                 sayidullohabbasov0909@gmail.com
                             </span>
                         </li> -->
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--ABOUT SECTION END-->
+    </section>
+    <!--ABOUT SECTION END-->
 
-<!--FOOTER-->
-<footer class="footer" id="contact_me">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="copyright">
-                    <p>Website made by Abbasov Sayidulloh <script>document.write(new Date().getFullYear());</script></p>
+    <!--FOOTER-->
+    <footer class="footer" id="contact_me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="copyright">
+                        <p>Website made by Abbasov Sayidulloh
+                            <script>document.write(new Date().getFullYear());</script>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <p class="contact-me">Contact me</p>
-                <div class="social-networks">
-                    <a href="mailto:sayidullohabbasov0909@gmail.com" target="_blank" class="networks">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://t.me/AbbasoV_0909" target="_blank" class="networks">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
-                    <a href="https://github.com/abbasov0909/" target="_blank" class="networks">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <!-- <a href="https://twitter.com/AbbasoV_0909" target="_blank" class="networks">
+                <div class="col-md-4">
+                    <p class="contact-me">Contact me</p>
+                    <div class="social-networks">
+                        <a href="mailto:sayidullohabbasov0909@gmail.com" target="_blank" class="networks">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://t.me/AbbasoV_0909" target="_blank" class="networks">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://github.com/abbasov0909/" target="_blank" class="networks">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com/AbbasoV_0909" target="_blank" class="networks">
                         <i class="fab fa-twitter"></i>
                     </a> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="smallInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae dolores
+                        in accusantium optio quidem dolorem veniam, dolorum iure odit.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <p class="smallInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae dolores in accusantium optio quidem dolorem veniam, dolorum iure odit.</p>
-            </div>
         </div>
-    </div>
-</footer>
-<!--FOOTER END-->
-    
+    </footer>
+    <!--FOOTER END-->
 
-<script src="./Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-<script src="./Bootstrap/js/popper.min.js"></script>
-<script src="./Bootstrap/js/bootstrap.min.js"></script>
-<script src="./aos/dist/aos.js"></script>
-<script>
-    AOS.init({
-        easing: 'ease-in-out-sine'
-    });
-</script>
-<script src="./js/app.js"></script>
+
+    <script src="./Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./Bootstrap/js/popper.min.js"></script>
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./aos/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
